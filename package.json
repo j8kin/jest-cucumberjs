@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "cucumber": "cucumber-js ./feature -r ./feature/steps"
+    "cucumber": "tsc && cucumber-js features/"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "typescript": "^3.3.3"
   },
   "dependencies": {
+    "@types/cucumber": "^4.0.5",
     "cucumber": "^5.1.0"
   }
 }
